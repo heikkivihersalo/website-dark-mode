@@ -1,0 +1,24 @@
+/**
+ * It is highly advisable to use CSS variables to configure colors
+ *
+ */
+
+html {
+  /* Default site color-scheme */
+}
+
+html.color-scheme--dark {
+  /* Default site color-scheme but want to use dark scheme */
+}
+
+@media (prefers-color-scheme: dark) {
+
+  html {
+    /* Styling for clients who prefer color-scheme: dark */
+  }
+
+  html.color-scheme--light {
+    /* Styling for clients who prefer color-scheme: dark but want to use light theme */
+  }
+
+}
